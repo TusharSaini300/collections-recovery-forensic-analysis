@@ -1,0 +1,17 @@
+table,field,type,purpose
+Monthly Metrics,month,Date,Monthly sort/date field
+Monthly Metrics,month_label,Text,Display month label
+Monthly Metrics,working_population,Whole number,Month-start working population
+Monthly Metrics,gross_recovery,Decimal,Gross successful recovery
+Monthly Metrics,working_account_recovery,Decimal,Recovery from month-start working accounts
+Monthly Metrics,gross_recovery_cr,Decimal,Gross recovery in ₹ Cr
+Monthly Metrics,working_recovery_cr,Decimal,Working-population recovery in ₹ Cr
+Monthly Metrics,gross_recovery_per_working_account,Decimal,Gross recovery divided by working population
+Monthly Metrics,corrected_recovery_per_working_account,Decimal,Working-population recovery divided by working population
+Monthly Metrics,raw_recovery_per_account,Decimal,Corrected raw recovery/account series from evidence
+Monthly Metrics,jan_mix_recovery_per_account,Decimal,January-mix standardized recovery/account
+Monthly Metrics,fixed_jan_cohort_recovery_per_account,Decimal,Fixed January cohort recovery/account
+Forensic Facts,check,Text,Forensic check name
+Forensic Facts,finding,Text,Observed finding
+Forensic Facts,evidence_class,Text,Evidence classification
+Forensic Facts,interpretation,Text,Executive interpretation

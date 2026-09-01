@@ -1,0 +1,10 @@
+check,finding,evidence_class,interpretation
+Leadership claim,+11% MoM; Feb→Mar = +11.03%,UNVERIFIED,Gross recovery reproduces +11.03% from Feb to Mar; exact leadership numerator/denominator/attribution rule remains undisclosed.
+Corrected recovery/account,~flat Jan→Jul,STRONG EVIDENCE,Population-aligned numerator and denominator.
+Mix standardized,~flat Jan→Jul,STRONG EVIDENCE,Standardized to January DPD × risk × geography mix.
+Fixed January cohort,~flat Jan→Jul,STRONG EVIDENCE,Same January working accounts followed through July.
+Reactivation,"7,758 / 25,999",FACT,Accounts with activity after a terminal status event.
+Payment duplicates,500,FACT,Exact payment-ID duplicates; broader near-duplicate audit found no additional cases.
+Attribution ranking,CALL > WHATSAPP > SMS > FIELD,FACT,Ranking stable across tested windows; match coverage falls under tighter windows.
+Investment decision,HOLD ₹10 Cr,DECISION,No causal lift/cost basis sufficient for a ₹10 Cr ROI case.
+Claim-basis ambiguity,Two plausible KPI definitions ≈ +11% Feb→Mar,UNVERIFIED,Gross recovery = +11.03%; corrected recovery/account = +11.73%. The supplied brief does not identify which definition leadership used.

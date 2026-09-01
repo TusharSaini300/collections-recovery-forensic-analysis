@@ -1,0 +1,76 @@
+-- Power BI DAX measures
+-- Table names expected: Monthly Metrics and Forensic Facts.
+
+Gross Recovery Cr =
+DIVIDE(SUM('Monthly Metrics'[gross_recovery]), 10000000)
+
+Working Recovery Cr =
+DIVIDE(SUM('Monthly Metrics'[working_account_recovery]), 10000000)
+
+Working Population =
+SUM('Monthly Metrics'[working_population])
+
+Corrected Recovery per Working Account =
+DIVIDE(
+    SUM('Monthly Metrics'[working_account_recovery]),
+    SUM('Monthly Metrics'[working_population])
+)
+
+Gross Recovery per Working Account =
+DIVIDE(
+    SUM('Monthly Metrics'[gross_recovery]),
+    SUM('Monthly Metrics'[working_population])
+)
+
+Jan Corrected Recovery per Account =
+CALCULATE(
+    [Corrected Recovery per Working Account],
+    'Monthly Metrics'[month] = DATE(2026,1,1)
+)
+
+Jul Corrected Recovery per Account =
+CALCULATE(
+    [Corrected Recovery per Working Account],
+    'Monthly Metrics'[month] = DATE(2026,7,1)
+)
+
+Jan to Jul Corrected Change % =
+DIVIDE(
+    [Jul Corrected Recovery per Account],
+    [Jan Corrected Recovery per Account]
+) - 1
+
+Decision =
+"HOLD ₹10 Cr"
+
+
+Reported Claim =
+"11%"
+
+Reported Claim Bridge =
+VAR FebRecovery =
+    CALCULATE(
+        [Gross Recovery Cr],
+        'Monthly Metrics'[month] = DATE(2026,2,1)
+    )
+VAR MarRecovery =
+    CALCULATE(
+        [Gross Recovery Cr],
+        'Monthly Metrics'[month] = DATE(2026,3,1)
+    )
+RETURN
+"Feb→Mar = " & FORMAT(DIVIDE(MarRecovery, FebRecovery) - 1, "0.00%")
+
+Corrected Feb to Mar Change % =
+VAR FebValue =
+    CALCULATE(
+        [Corrected Recovery per Working Account],
+        'Monthly Metrics'[month] = DATE(2026,2,1)
+    )
+VAR MarValue =
+    CALCULATE(
+        [Corrected Recovery per Working Account],
+        'Monthly Metrics'[month] = DATE(2026,3,1)
+    )
+RETURN
+DIVIDE(MarValue, FebValue) - 1
