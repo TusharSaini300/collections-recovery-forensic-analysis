@@ -1,0 +1,6 @@
+metric,comparison,prior_value,current_value,change_pct,interpretation
+Gross recovery,Feb → Mar,17.014245376,18.891237402,11.0318852498,The reported ~11% claim can be arithmetically reproduced as the Feb→Mar gross-recovery increase; exact leadership metric definition remains undisclosed.
+Corrected recovery/account,Feb → Mar,5618.267957373872,6277.278532046865,11.7297818415,"A second plausible KPI definition also produces an ~11% Feb→Mar increase, reinforcing that the claim basis cannot be identified from the brief alone."
+Corrected recovery/account,Jan → Jul,6240.970919666668,6230.089074988546,-0.174364,Population-aligned like-for-like result is effectively flat across complete Jan–Jul months.
+Jan-mix standardized recovery/account,Jan → Jul,6240.970919666666,6240.855275489183,-0.00185,Holding January DPD × risk × geography mix constant leaves the result effectively flat.
+Fixed January cohort recovery/account,Jan → Jul,6240.970919666668,6241.408836,0.00702,Following the same January working accounts through July also leaves the result effectively flat.
