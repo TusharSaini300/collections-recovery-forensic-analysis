@@ -1,0 +1,7 @@
+table,raw_rows,golden_rows,rows_removed,treatment
+borrowers,30600,11015,19585,collapsed to 1 row/borrower_id (latest by updated_at); LOW-confidence flag on conflicted ids
+agents,30000,1000,29000,collapsed to 1 row/agent_id for descriptive attributes; first_seen_active_at used only as activity proxy
+payments,25500,25000,500,dropped exact payment_id dupes + true reference+account+amount dupes only
+account_status_history,60000,60000,0,"kept all rows, flagged 30191 as RECORDED_BEFORE_EVENT (not usable for lag SLA)"
+call_dispositions,35000,35000,0,"added disposition_canonical (PTP+PROMISE_TO_PAY -> PTP_MADE), kept raw code too"
+whatsapp_events,60600,60000,600,removed exact duplicate whatsapp_event_id rows only; all duplicate IDs were exact duplicates
