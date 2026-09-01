@@ -1,0 +1,23 @@
+-- COLLECTIONS RECOVERY FORENSIC ANALYSIS
+-- SQL ENVIRONMENT: MySQL 8.0+
+--
+-- Run order:
+--   00_schema.sql
+--   01_profiling.sql
+--   02_entity_resolution.sql
+--   03_payment_dedup.sql
+--   04_status_population.sql
+--   05_attribution.sql
+--   06_metrics.sql
+--   07_mix_cohort.sql
+--   08_driver_analysis.sql
+--   09_targeting_diagnostics.sql
+--
+-- The SQL is written for MySQL 8.0+ and operates on the committed Golden
+-- Dataset tables. CSV import is intentionally kept outside the analytical
+-- queries so the queries remain easy to inspect and reproduce in MySQL
+-- Workbench.
+--
+-- Core principle:
+--   Never silently "fix" source values. Preserve the Golden layer, expose
+--   quality flags, and make every KPI definition explicit.
