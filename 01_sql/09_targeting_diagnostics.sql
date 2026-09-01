@@ -1,0 +1,2 @@
+-- P5: identify targeting intervention date, treatment, untouched control and parallel pre-trends before DiD.
+-- Supplied data does not identify a clean intervention/control transition; do not manufacture a DiD estimate.

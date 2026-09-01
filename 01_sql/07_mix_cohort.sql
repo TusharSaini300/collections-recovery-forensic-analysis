@@ -1,0 +1,3 @@
+-- P3: Direct standardization against January DPD x risk_segment x geography mix.
+-- Fixed cohort: original January working accounts, tracked through July with fixed denominator.
+-- Survivorship: classify exits and compare exit rates by starting DPD/risk.
