@@ -1,4 +1,0 @@
--- Collections Recovery SQL Repository
--- 01 profiling | 02 entity resolution | 03 payment dedup | 04 status/population
--- 05 attribution | 06 metrics | 07 mix/cohort | 08 drivers | 09 targeting diagnostics
--- Adapt DATE/TIMESTAMP syntax to the execution warehouse.

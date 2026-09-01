@@ -1,2 +1,0 @@
--- P2B: compare last-touch with 30/14/7-day lookback windows.
--- Purpose is sensitivity, not causal attribution. Preserve raw event timestamps and attribution window.

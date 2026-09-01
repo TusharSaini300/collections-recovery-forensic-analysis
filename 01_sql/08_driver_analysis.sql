@@ -1,2 +1,0 @@
--- P4: descriptive association followed by adjusted confounder checks.
--- Never interpret channel/attempt coefficients causally: treatment exposure is selected by borrower difficulty.

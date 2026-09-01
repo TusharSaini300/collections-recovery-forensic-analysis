@@ -1,7 +1,0 @@
--- P3: KPI definitions
--- Recovery/account = successful deduplicated payments from month-start working accounts / month-start working population.
--- Contact rate = contacted working accounts / working population.
--- RPC rate = RPC working accounts / working population.
--- PTP rate = PTP working accounts / working population.
--- PTP kept = payment-based reconstruction under a fixed disclosed window; do not trust raw status=KEPT without SME validation.
--- Recovery/agent-hour = successful recovery / valid agent session hours.
